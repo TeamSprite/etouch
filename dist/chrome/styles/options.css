@@ -1,0 +1,47 @@
+body{
+  padding: 0 40px;
+  margin: 40px auto;
+  background: #fff;
+  width: 800px;
+}
+h3{
+  margin:10px 0;
+}
+
+.file{
+  margin-bottom: 20px;
+}
+
+.urlList{
+  width: 800px;
+  padding: 12px 0;
+}
+.urlItem{
+  margin: 12px 0;
+}
+
+.input:focus{
+  border-color: #dcdfe6;
+}
+.urlItem-input-label{
+  width: 120px;
+  height: 32px;
+  border-color: transparent!important;
+}
+.urlItem-input{
+  width: 330px;
+  margin-left: 10px!important;
+  height: 32px;
+  border-color: transparent!important;
+}
+
+.urlItem-input-label{
+
+}
+.urlItem-operations{
+  width: 140px;
+  float: right;
+}
+.card-main{
+  padding:12px;
+}
