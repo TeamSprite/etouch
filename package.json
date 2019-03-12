@@ -1,0 +1,12 @@
+{
+  "name": "etouch",
+  "version": "0.0.2",
+  "description": "fast to open pages you like",
+  "scripts": {
+    "dev": "webextension-toolbox dev",
+    "build": "webextension-toolbox build"
+  },
+  "devDependencies": {
+    "webextension-toolbox": "latest"
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Options</title>
+    <link rel="stylesheet" href="../styles/picnic.css" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/options.css" />
+  </head>
+  <body>
+    <h3>配置文件</h3>
+    <div >
+        <label for="">选择配置文件</label>
+        <input type="file" class="J-file file half" accept=".json">
+        <!-- <button class="off-fifth">同步配置文件</button> -->
+        <button class="off-fifth J-download-conf">导出配置文件</button>
+    </div>
+    <h3>配置打开网页</h3>
+    <ul class="J-urlList urlList">
+      <li>
+        <p class="urlItem-operations">
+          <button class="add J-add">新增</button>
+        </p>
+        <input
+          type="text"
+          placeholder="名称"
+          class="input urlItem-input-label J-urlItem-input-label"
+        />
+        <input
+          type="text"
+          placeholder="网址"
+          class="input urlItem-input J-urlItem-input"
+        />
+      </li>
+      <li class="hide J-hide">
+        <p class="err">
+          <span>请输入名称和网址！</span>
+        </p>
+      </li>
+      <!-- <li class="listCon J-listCon">
+        <div>
+          <input type="text" placeholder="快捷键" />
+        </div>
+        <div class="J-listCon-main"></div>
+      </li> -->
+      <!-- <div class="J-urlItem urlItem">
+        <p class="urlItem-operations">
+          <button class="urlItem-modify J-urlItem-modify">修改</button>
+          <button class="urlItem-delete J-urlItem-delete">删除</button>
+        </p>
+        <input type="text" class="input urlItem-input-label J-urlItem-input-label"/>
+        <input type="text" class="input urlItem-input J-urlItem-input"/>
+      </div> -->
+    </ul>
+
+    <div class="tabs three">
+      <input id="tab-1" type="radio" name="tabgroupB" class="J-tabs-radio" checked value='0'/>
+      <label class="pseudo button toggle" for="tab-1">1</label>
+      <input id="tab-2" type="radio" name="tabgroupB" class="J-tabs-radio" value='1'/>
+      <label class="pseudo button toggle" for="tab-2">2</label>
+      <input id="tab-3" type="radio" name="tabgroupB" class="J-tabs-radio" value='2'/>
+      <label class="pseudo button toggle" for="tab-3">3</label>
+      <div class="row">
+        <article class="card">
+          <header>
+            <h3>Alt + Q</h3>
+          </header>
+          <div class="card-main J-card-main">
+            <!-- <div class="J-urlItem urlItem">
+              <p class="urlItem-operations">
+                <button class="urlItem-modify J-urlItem-modify">修改</button>
+                <button class="urlItem-delete J-urlItem-delete">删除</button>
+              </p>
+              <input type="text" class="input urlItem-input-label J-urlItem-input-label"/>
+              <input type="text" class="input urlItem-input J-urlItem-input"/>
+            </div> -->
+          </div>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Alt+ W</h3>
+          </header>
+          <div class="card-main J-card-main"></div>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Alt + E</h3>
+          </header>
+          <div class="card-main J-card-main"></div>
+        </article>
+      </div>
+    </div>
+    <script src="../scripts//jquery.js"></script>
+    <script src="../scripts/options.js"></script>
+  </body>
+</html>
