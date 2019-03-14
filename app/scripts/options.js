@@ -127,16 +127,17 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
   const initDownloadConf = ()=>{
-    storage.get(["urlList"], res => {
-      let urlList = res.urlList || [];
-      try{
-        $('.J-download-conf').on('click',()=>{
+    $(".J-download-conf").on('click',()=>{
+      storage.get(["urlList"], res => {
+        let urlList = res.urlList || [];
+        console.log('donwloadConf...',urlList)
+        try{
           downloadFile(JSON.stringify(urlList),'eTouch.conf.json')
-        })
-      }catch(err){
-        console.log('download err:',err)
-      }
-    });
+        }catch(err){
+          console.log('download err:',err)
+        }
+      });
+    })
   }
 
   const initDeleteEvt = () => {
